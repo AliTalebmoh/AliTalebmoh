@@ -2,11 +2,11 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs daily
-  workflow_dispatch:  # Allows manual runs
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Grant write permissions
+  contents: write
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false  # Ensures fresh authentication
+          persist-credentials: false
 
       - name: Generate Snake SVG
         uses: Platane/snk@v3
@@ -23,13 +23,15 @@ jobs:
           github_user_name: AliTalebmoh
           outputs: dist/snake.svg
 
+      - name: Verify File Exists
+        run: ls -lah dist/
+
       - name: Commit and Push to Output Branch
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git checkout -B output
-          mkdir -p dist  # Ensure the directory exists
-          mv dist/snake.svg snake.svg
+          sudo mv dist/snake.svg snake.svg
           git add snake.svg
           git commit -m "Generated snake animation"
           git push origin output --force
