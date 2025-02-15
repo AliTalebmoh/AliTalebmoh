@@ -23,8 +23,11 @@ jobs:
           github_user_name: AliTalebmoh
           outputs: dist/snake.svg
 
-      - name: Verify File Exists
-        run: ls -lah dist/
+      - name: Verify Generated Files
+        run: |
+          ls -lah dist/
+          cat dist/snake.svg || echo "File not found"
+
 
       - name: Commit and Push to Output Branch
         run: |
