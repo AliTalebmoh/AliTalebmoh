@@ -5,12 +5,17 @@ on:
     - cron: "0 0 * * *"  # Runs daily
   workflow_dispatch:  # Allows manual runs
 
+permissions:
+  contents: write  # Grant write permissions
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # Ensures fresh authentication
 
       - name: Generate Snake SVG
         uses: Platane/snk@v3
@@ -23,8 +28,8 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git checkout -B output
+          mkdir -p dist  # Ensure the directory exists
           mv dist/snake.svg snake.svg
           git add snake.svg
           git commit -m "Generated snake animation"
           git push origin output --force
-
