@@ -9,13 +9,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
       - name: Generate Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: AliTalebmoh
           outputs: dist/snake.svg
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: snake
-          path: dist/snake.svg
+
+      - name: Commit and Push to Output Branch
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git checkout -B output
+          mv dist/snake.svg snake.svg
+          git add snake.svg
+          git commit -m "Generated snake animation"
+          git push origin output --force
+
