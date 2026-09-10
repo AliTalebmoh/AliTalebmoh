@@ -1,4 +1,12 @@
-<h1 align="center">Hi, I'm Ali 👋</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/banner-light.svg">
+    <img src="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/banner-light.svg" alt="Hi, I'm Ali" />
+  </picture>
+</p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/spacer.png" width="1" height="18" alt="" /></p>
 
 <p align="center">
   Full-Stack Developer building production web apps with <strong>Next.js, React, TypeScript, Laravel &amp; Supabase</strong>
@@ -14,12 +22,14 @@
   <a href="https://x.com/TalebmohAli" target="_blank"><img src="https://img.shields.io/badge/X-24292f?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 </p>
 
-<br />
+<p align="center"><img src="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/spacer.png" width="1" height="28" alt="" /></p>
 
 <p align="center"><strong>Core stack</strong></p>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=nextjs,react,ts,laravel,supabase&theme=dark" height="50" alt="Next.js, React, TypeScript, Laravel, Supabase" />
 </p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/AliTalebmoh/AliTalebmoh/main/assets/spacer.png" width="1" height="20" alt="" /></p>
 
 <p align="center"><strong>Also using</strong></p>
 <p align="center">
