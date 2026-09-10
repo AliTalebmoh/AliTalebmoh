@@ -7,7 +7,9 @@
 </p>
 
 <p align="center">
+  <a href="https://alitalebmoh.sitewebk.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-24292f?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/ali-talebmoh-4ab9b831a/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-24292f?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/4li.cdx/" target="_blank"><img src="https://img.shields.io/badge/Instagram-24292f?style=flat-square&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://web.facebook.com/TalebmohAli" target="_blank"><img src="https://img.shields.io/badge/Facebook-24292f?style=flat-square&logo=facebook&logoColor=white" alt="Facebook" /></a>
   <a href="https://x.com/TalebmohAli" target="_blank"><img src="https://img.shields.io/badge/X-24292f?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 </p>
